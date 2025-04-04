@@ -1,3 +1,4 @@
+
 // Consumidor de mensajes
 import com.rabbitmq.client.*;
 
@@ -22,6 +23,7 @@ public class Consumidor {
         };
 
         // Consumimos mensajes de la cola
-        channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> { });
+        channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> {
+        });
     }
 }
